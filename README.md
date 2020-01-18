@@ -58,7 +58,7 @@ Now the pplication is deployed locally and it will be available on http://localh
 
    mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
 
-2. Add the webapp-runner plugin into the `pom.xml`:
+2. Add the webapp-runner plugin into the pom.xml:
 
    <build>
      <!-- ... -->
@@ -88,7 +88,7 @@ Now the pplication is deployed locally and it will be available on http://localh
      </plugins>
    </build>
 
-3. Add the login in index.jsp
+3. Add the logic
 
 
 ## Future development tasks
