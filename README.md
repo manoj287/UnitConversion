@@ -93,13 +93,13 @@ Now the pplication is deployed locally and it will be available on http://localh
 
 ## Future development tasks
 
-1. Design the website at full scale and Connect the application to database and store the results
+1. Enhance UI specs, add jasmine test framework to write test scripts and run as part of CI/CD. 
 
 2. Install tomcat on remote server,update the pom.xml file and deploy the application on the server (e.g. cloud)
 
 3. Provide a server for jenkins slave and configure the build to run on the slave machine and also take backup of the master node in jenkins(e.g cloud  or remote server).
 
-4. Create a pipeline job in Jenkins and add a github webhook ,so that whenever a new comit is made to the repo,
-   Jenkins will run the pipeline job and re-deploy the application on the server.
+4. Create a pipeline job in Jenkins and add a github webhook ,so that whenever a new commit is made to the repo,
+   Jenkins will run the pipeline job to build the code,run unit tests using jasmine framework and re-deploy the application on the server.
    
-5. Adding code inspection tolls such as sonarqube,contrast to detect code vulnerabilities and install logging tools such as splunk or ELK stack and server monitoring tools like Dynatrace or Appdynamics respectively to check the server stats.
+5. Adding code inspection tools such as sonarqube,contrast to detect code vulnerabilities and install logging tools such as splunk or ELK stack and server monitoring tools like Dynatrace or Appdynamics respectively to check the memory and CPU stats.
