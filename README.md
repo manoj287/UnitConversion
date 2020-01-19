@@ -43,6 +43,8 @@ Now the pplication is deployed locally and it will be available on http://localh
 
 ## Alternate way to deploy from jenkins.
 
+Precondition: Your Jenkins should be configured under global tools configuration with git exe directory and necessary plugins installed.
+
 1. Copy the Jenkins job folder named "unitconversion" into the jenkins jobs directory and restart jenkins.
 
 2. Now you should see a new job named "unitconversion".
