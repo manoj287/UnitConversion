@@ -21,35 +21,33 @@ body {
 </p>
 <p>
   <label>Input Unit of Measure</label>
-  <input type="text" id=iu name="iunit" list="measure" placeholder="select from dropdown"><br>
-    <datalist id="measure">
-      <option value="Farenheit">
-      <option value="Rankine">
-	  <option value="Kelvin">
-      <option value="Celsius">
-	  <option value="litres">
-      <option value="gallons">
-      <option value="tablespoons">
-      <option value="cubic-inches">
-      <option value="cups">
-      <option value="cubic-feet">
-    </datalist>
+    <select id="iu">
+      <option value="Farenheit">Farenheit</option>
+      <option value="Rankine">Rankine</option>
+	  <option value="Kelvin">Kelvin</option>
+      <option value="Celsius">Celsius</option>
+	  <option value="litres">litres</option>
+      <option value="gallons">gallons</option>
+      <option value="tablespoons">tablespoons</option>
+      <option value="cubic-inches">cubic-inches</option>
+      <option value="cups">cups</option>
+      <option value="cubic-feet">cubic-feet</option>
+    </select>
 </p>
 <p>
   <label>Target Unit of Measure</label>
-    <input type="text" id ="tu" name="tunit" list="measure"placeholder="select from dropdown"><br>
-    <datalist id="measure">
-      <option value="Farenheit">
-      <option value="Rankine">
-	  <option value="Kelvin">
-      <option value="Celsius">
-	  <option value="litres">
-      <option value="gallons">
-      <option value="tablespoons">
-      <option value="cubic-inches">
-      <option value="cups">
-      <option value="cubic-feet">
-    </datalist>
+    <select id="tu">
+      <option value="Farenheit">Farenheit</option>
+      <option value="Rankine">Rankine</option>
+	  <option value="Kelvin">Kelvin</option>
+      <option value="Celsius">Celsius</option>
+	  <option value="litres">litres</option>
+      <option value="gallons">gallons</option>
+      <option value="tablespoons">tablespoons</option>
+      <option value="cubic-inches">cubic-inches</option>
+      <option value="cups">cups</option>
+      <option value="cubic-feet">cubic-feet</option>
+    </select>
    
 </p>
 <button onclick="LengthConverter()">Validate</button>
