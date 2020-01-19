@@ -21,7 +21,7 @@ body {
 </p>
 <p>
   <label>Input Unit of Measure</label>
-    <select id="iu">
+    <select id="iu" >
       <option value="Farenheit">Farenheit</option>
       <option value="Rankine">Rankine</option>
 	  <option value="Kelvin">Kelvin</option>
@@ -59,6 +59,7 @@ function LengthConverter() {
 var t=document.getElementById("iu").value
 var t1=document.getElementById("tu").value
 
+if(document.getElementById("ir").value !== '' && document.getElementById("sr").value !== ''){
 switch(t){
 case "Farenheit":
   if(t1 === "Celsius"){// Farenheit to celsius
@@ -505,12 +506,18 @@ break;
 default:
 output('invalid');
 }
-
+}
+else {
+output('missing input values');
+}
 function output(val){
 if(val=='invalid'){
 document.getElementById("outputMeters").innerHTML="<span style='color:#FF0000'>"+val+" </span>";
 }
 else if(val=='incorrect'){
+document.getElementById("outputMeters").innerHTML="<span style='color:#FF0000'>"+val+" </span>";
+}
+else if(val=='missing input values'){
 document.getElementById("outputMeters").innerHTML="<span style='color:#FF0000'>"+val+" </span>";
 }
 else {
